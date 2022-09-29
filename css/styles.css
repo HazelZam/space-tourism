@@ -1,3 +1,19 @@
+body {
+    background-color: #0B0D17
+}
+
 nav {
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 2em;
+}
+
+.nav-div-right {
+    margin-left: 50%
+
+}
+
+.nav-el{
+    color: white;
+    text-decoration: none;
+    margin: 25px;
 }
