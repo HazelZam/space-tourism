@@ -14,6 +14,14 @@ body {
     background-image: url("../assets/destination/background-destination-desktop.jpg");
 }
 
+.body-crew {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.body-tech {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
 .main-nav {
     margin-top: 40px;
     display: flex;
@@ -64,7 +72,7 @@ body {
     border-bottom: 3px solid rgba(255, 255, 255, .5);
 }
 
-.current_page {
+.current-page {
     border-bottom: 3px solid white;
 }
 .nav-num {
@@ -77,15 +85,10 @@ body {
     justify-content: space-between;
 }
 
-.content-dest {
+.content-other {
     margin: 100px 165px auto 165px;
     display: flex;
     justify-content: space-between;
-}
-
-.text-container {
-    display: inline-block;
-    width: 450px;
 }
 
 .prompt-home {
@@ -93,6 +96,7 @@ body {
     font-size: 28px;
     letter-spacing: 4.75px;
     color: #D0D6F9;
+    text-transform: uppercase;
 }
 .title-home {
     font-family: "Bellefair", sans-serif;
@@ -134,7 +138,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.dest-prompt {
+.page-prompt {
     margin: 50px 165px;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 28px;
@@ -143,12 +147,12 @@ body {
     color: #ffffff;
 }
 
-.dest-prompt-num {
+.page-prompt-num {
     font-weight: bold;
     opacity: 25%
 }
 
-.content-dest-right {
+.content-dest {
     width: 450px;
 }
 
@@ -167,7 +171,7 @@ body {
     border-bottom: 3px solid rgba(255, 255, 255, .5)
 }
 
-.current_dest {
+.current-dest {
     color: #ffffff;
     border-bottom: 3px solid white;
 }
@@ -178,6 +182,7 @@ body {
     margin: 40px 0 20px 0;
     line-height: 115px;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .stats-hr {
@@ -195,7 +200,7 @@ body {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: 2.36;
+    letter-spacing: 2.36px;
     color: #D0D6F9;
     text-transform: uppercase;
 }
@@ -205,4 +210,120 @@ body {
     font-size: 28px;
     line-height: 32px;
     text-transform: uppercase;
+    color: #ffffff;
+}
+
+.content-crew {
+    margin: 50px 165px auto 165px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crew-role {
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    margin: 100px 0 10px 0;
+    line-height: 37px;
+    text-transform: uppercase;
+    opacity: 50%;
+    color: #ffffff;
+}
+
+.crew-name {
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    margin: 0 0 20px 0;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.crew-text {
+    width: 450px;
+}
+
+.crew-nav-bar {
+    margin-top: 100px;
+}
+
+.crew-nav {
+    display: inline-block;
+    border: 7.5px solid rgba(255, 255, 255, 17%);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.crew-nav:hover {
+    border-color: rgba(255, 255, 255, 50%);
+}
+.current-crew {
+    border-color: white;
+}
+
+.content-tech {
+    margin: 50px 0;
+}
+
+.tech-nav-bar {
+    width: 180px;
+    height: 350px;
+    display: inline-block;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.tech-nav {
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    line-height: 80px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 25%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.tech-nav:hover {
+    border-color: rgba(255, 255, 255, 100%)
+}
+
+.current-tech {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.text-container {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+    height: 320px;
+    overflow: hidden;
+}
+
+.tech-term {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    line-height: 37px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+
+.tech-name {
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    margin: 0 0 20px 0;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.body-text{
+    width: 450px;
 }
