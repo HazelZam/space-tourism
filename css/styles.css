@@ -1,19 +1,89 @@
 body {
-    background-color: #0B0D17
+    margin: 0;
+    background-color: #0B0D17;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    color: white;
+
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.04);
-    padding: 2em;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-div-right {
-    margin-left: 50%
-
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    padding: 35px 0 35px 100px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30px);
+    display: inline-block;
+    letter-spacing: 2.7px;
+    width: 750px;
 }
 
-.nav-el{
+.nav-link {
     color: white;
     text-decoration: none;
     margin: 25px;
+
+}
+
+.logo {
+    margin: auto 60px;
+}
+
+.nav-num {
+    font-weight: bold;
+}
+
+.nav-hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    width: 500px;
+}
+
+.content {
+    margin: 300px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-container {
+    display: inline-block;
+    width: 450px;
+}
+
+.prompt-home {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: #D0D6F9;
+}
+.title-home {
+    font-family: "Bellefair", sans-serif;
+    font-size: 150px;
+}
+.body-text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    color: #D0D6F9;
+}
+.explore-btn {
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+
+
 }
