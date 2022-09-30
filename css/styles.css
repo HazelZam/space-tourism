@@ -3,51 +3,76 @@ body {
     background-color: #0B0D17;
     background-image: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
 
 }
 
 nav {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
-}
-
-.nav-div-right {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 16px;
-    padding: 35px 0 35px 100px;
-    background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(30px);
-    display: inline-block;
-    letter-spacing: 2.7px;
-    width: 750px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    margin: 25px;
-
 }
 
 .logo {
     margin: auto 60px;
 }
 
+.nav-hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    flex-grow: 1;
+    opacity: 25%;
+    backdrop-filter: blur(30px);
+    margin: auto 0 auto auto;
+}
+
+.nav-bar {
+    padding: 48px 165px 48px 0;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30px);
+    display: inline-block;
+}
+
+.nav-bar-hr-box {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30px);
+    display: inline-block;
+    width: 120px;
+}
+.nav-bar-hr {
+    margin-left: 0;
+    border: 0;
+    border-top: 1px solid #ffffff;
+    opacity: 25%;
+    backdrop-filter: blur(30px);
+    width: 30px;
+}
+
+.nav-button {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    padding: 45px 0
+
+}
+.nav-button:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, .5)
+}
+
+.current_page {
+    border-bottom: 3px solid white;
+}
 .nav-num {
     font-weight: bold;
 }
 
-.nav-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: auto;
-    width: 500px;
-}
-
 .content {
-    margin: 300px 150px;
+    margin: 300px 165px auto 165px;
     display: flex;
     justify-content: space-between;
 }
@@ -65,25 +90,39 @@ nav {
 .title-home {
     font-family: "Bellefair", sans-serif;
     font-size: 150px;
+    margin: 20px 0;
+    line-height: 172px
 }
 .body-text {
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-size: 18px;
-    letter-spacing: 1.5px;
-    line-height: 1.5;
+    line-height: 32px;
     color: #D0D6F9;
+}
+
+.explore-btn-box {
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    line-height: 225px;
+    border-radius: 50%;
 }
 .explore-btn {
     font-family: "Bellefair", sans-serif;
     font-size: 32px;
+    letter-spacing: 2px;
     display: inline-block;
     background-color: white;
     color: black;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    line-height: 250px;
+    width: 274px;
+    height: 274px;
+    line-height: 274px;
     text-align: center;
+    text-decoration: none;
+    margin: 88px;
+}
 
-
+.explore-btn-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
