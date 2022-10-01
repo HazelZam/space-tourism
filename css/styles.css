@@ -1,376 +1,1133 @@
-/*---------- All Pages ----------*/
+@media screen and (min-width: 1500px){
+    /*---------- All Pages ----------*/
+    body {
+        margin: 0;
+        background-color: #0B0D17;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff;
 
-body {
-    margin: 0;
-    background-color: #0B0D17;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #ffffff;
+    }
 
+    header {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: auto 60px;
+    }
+
+    .header-hr {
+        border: 0;
+        border-top: 1px solid #ffffff;
+        flex-grow: 1;
+        opacity: 25%;
+        margin: auto 0 auto auto;
+    }
+
+    .header-nav-row {
+        padding: 40px 15% 40px 0;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40px);
+        display: inline-block;
+    }
+
+    .header-nav-hr {
+        margin: auto 90px auto 0;
+        border: 0;
+        border-top: 1px solid #ffffff;
+        opacity: 25%;
+        width: 30px;
+        height: 5px;
+        display: inline-block;
+    }
+
+    .header-nav-button {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: white;
+        text-decoration: none;
+        margin: 30px;
+        padding: 37px 0;
+        text-transform: uppercase;
+
+    }
+
+    .header-nav-button:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, .5);
+    }
+
+    .current-page {
+        border-bottom: 3px solid white;
+    }
+
+    .nav-num {
+        font-weight: bold;
+    }
+
+    .body-text {
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #D0D6F9;
+    }
+
+    /*---------- Home Page ----------*/
+    .body-home {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
+
+    .container-text-home {
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+        padding: 0;
+    }
+
+    .prompt-home {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
+
+    .title-home {
+        font-family: "Bellefair", sans-serif;
+        font-size: 150px;
+        margin: 20px 0;
+        line-height: 172px
+    }
+
+    .home-text {
+        width: 450px;
+    }
+
+    .explore-container {
+        display: inline-flex;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+    }
+
+    .explore-btn {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #000000;
+        background-clip: padding-box;
+        border-radius: 50%;
+        width: 274px;
+        line-height: 274px;
+        text-align: center;
+        border: 88px solid rgba(255, 255, 255, 0);
+    }
+
+    .explore-btn:hover {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /*---------- All pages, except home ----------*/
+    .page-prompt {
+        margin: 60px 165px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .page-prompt-num {
+        font-weight: bold;
+        opacity: 25%;
+        margin-right: 10px;
+    }
+
+    /*---------- Destination Page ----------*/
+    .body-destination {
+        background-image: url("../assets/destination/background-destination-desktop.jpg");
+    }
+
+    .dest-image {
+        display: inline-flex;
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+    }
+
+    .container-text-dest {
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+        padding: 0;
+    }
+
+    .container-text-dest {
+        width: 450px;
+    }
+
+    .dest-nav {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-decoration: none;
+        margin: 15px;
+        padding: 10px 0;
+        text-transform: uppercase;
+
+    }
+
+    .dest-nav:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, .5)
+    }
+
+    .current-dest {
+        color: #ffffff;
+        border-bottom: 3px solid white;
+    }
+
+    .title-dest {
+        font-family: "Bellefair", sans-serif;
+        font-size: 100px;
+        margin: 40px 0 20px 0;
+        line-height: 115px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .stats-hr {
+        border: 0;
+        border-top: 1px solid #D0D6F9;
+        opacity: 20%;
+    }
+
+    .stats {
+        display: inline-block;
+        width: 220px;
+    }
+
+    .stat-text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.36px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
+
+    .stat-value {
+        font-family: "Bellefair", sans-serif;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    /*---------- Crew Page ----------*/
+    .body-crew {
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+    }
+
+    .container-text-crew {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+        padding: 0;
+    }
+
+    .crew-image {
+        display: inline-flex;
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+    }
+
+    .crew-role {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        margin: 100px 0 10px 0;
+        line-height: 37px;
+        text-transform: uppercase;
+        opacity: 50%;
+        color: #ffffff;
+    }
+
+    .crew-name {
+        font-family: "Bellefair", sans-serif;
+        font-size: 56px;
+        margin: 0 0 20px 0;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .crew-text {
+        width: 450px;
+    }
+
+    .crew-nav-bar {
+        margin-top: 100px;
+    }
+
+    .crew-nav {
+        display: inline-block;
+        border: 7.5px solid rgba(255, 255, 255, 17%);
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .crew-nav:hover {
+        border-color: rgba(255, 255, 255, 50%);
+    }
+
+    .current-crew {
+        border-color: #ffffff;
+    }
+
+    /*---------- Tech Page ----------*/
+    .body-tech {
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+    }
+
+    .container-tech {
+        margin: 100px 165px auto 165px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-text-nav-tech {
+        position: absolute;
+        bottom: 25%;
+        left: 10%;
+        padding: 0;
+    }
+
+    .tech-image {
+        display: inline-flex;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+    }
+
+    .tech-nav-bar {
+        width: 180px;
+        height: 350px;
+        display: inline-block;
+        line-height: 80px;
+        overflow: hidden;
+    }
+
+    .tech-nav {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        line-height: 80px;
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 25%);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        text-align: center;
+
+    }
+
+    .tech-nav:hover {
+        border-color: rgba(255, 255, 255, 100%)
+    }
+
+    .current-tech {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .text-container {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 0;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .tech-term {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        line-height: 37px;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .tech-name {
+        font-family: "Bellefair", sans-serif;
+        font-size: 56px;
+        margin: 0 0 20px 0;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .tech-text {
+        width: 450px;
+    }
 }
 
-header {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 650px) and (max-width: 1500px){
+    /*---------- All Pages ----------*/
+    body {
+        margin: 0;
+        background-color: #0B0D17;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff;
+
+    }
+
+    header {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: auto 40px;
+    }
+
+    .header-hr {
+        display: none;
+    }
+
+    .header-nav-row {
+        padding: 40px 30px;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40px);
+        display: inline-block;
+    }
+
+    .header-nav-hr {
+        display: none;
+    }
+
+    .header-nav-button {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        padding: 37px 0;
+        text-transform: uppercase;
+
+    }
+
+    .header-nav-button:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, .5);
+    }
+
+    .current-page {
+        border-bottom: 3px solid white;
+    }
+
+    .nav-num {
+        display: none;
+    }
+
+    .body-text {
+        font-family: "Barlow", sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        color: #D0D6F9;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*---------- Home Page ----------*/
+    .body-home {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+
+    .container-text-home {
+        margin: 12% auto 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .prompt-home {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
+
+    .title-home {
+        font-family: "Bellefair", sans-serif;
+        font-size: 150px;
+        margin: 20px 0;
+        line-height: 172px
+    }
+
+    .home-text {
+        width: 440px;
+        margin: auto;
+    }
+
+    .explore-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%
+    }
+
+    .explore-btn {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #000000;
+        background-clip: padding-box;
+        border-radius: 50%;
+        width: 242px;
+        line-height: 242px;
+        text-align: center;
+        border: 88px solid rgba(255, 255, 255, 0);
+    }
+
+    .explore-btn:hover {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /*---------- All pages, except home ----------*/
+    .page-prompt {
+        margin: 60px 40px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .page-prompt-num {
+        font-weight: bold;
+        margin-right: 10px;
+        opacity: 25%
+    }
+
+    /*---------- Destination Page ----------*/
+    .body-destination {
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+
+    .dest-image {
+        display: flex;
+        margin: auto;
+        width: 300px;
+    }
+
+    .container-text-dest {
+        margin: 5% auto 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-text-dest {
+        width: 550px;
+    }
+
+    .dest-nav {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-decoration: none;
+        margin: 15px;
+        padding: 10px 0;
+        text-transform: uppercase;
+
+    }
+
+    .dest-nav:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, .5)
+    }
+
+    .current-dest {
+        color: #ffffff;
+        border-bottom: 3px solid white;
+    }
+
+    .title-dest {
+        font-family: "Bellefair", sans-serif;
+        font-size: 80px;
+        margin: 40px 0 10px 0;
+        line-height: 92px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .stats-hr {
+        border: 0;
+        border-top: 1px solid #D0D6F9;
+        opacity: 20%;
+    }
+
+    .stats {
+        display: inline-block;
+        width: 220px;
+    }
+
+    .stat-text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.36px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
+
+    .stat-value {
+        font-family: "Bellefair", sans-serif;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    /*---------- Crew Page ----------*/
+    .body-crew {
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+
+    .container-text-crew {
+        margin: 5% auto 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .crew-image {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        align-items: center;
+        margin: auto;
+        height: 500px;
+    }
+
+    .crew-role {
+        font-family: "Bellefair", sans-serif;
+        font-size: 24px;
+        margin: 0 0 10px 0;
+        line-height: 28px;
+        text-transform: uppercase;
+        opacity: 50%;
+        color: #ffffff;
+    }
+
+    .crew-name {
+        font-family: "Bellefair", sans-serif;
+        font-size: 40px;
+        margin: 0 0 20px 0;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .crew-text {
+        width: 460px;
+        margin: auto;
+    }
+
+    .crew-nav-bar {
+        margin-top: 30px;
+    }
+
+    .crew-nav {
+        display: inline-block;
+        border: 5px solid rgba(255, 255, 255, 17%);
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .crew-nav:hover {
+        border-color: rgba(255, 255, 255, 50%);
+    }
+
+    .current-crew {
+        border-color: #ffffff;
+    }
+
+    /*---------- Tech Page ----------*/
+    .body-tech {
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+
+    .container-tech {
+        margin: 100px 165px auto 165px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-text-nav-tech {
+        margin: 5% auto 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tech-image {
+        display: flex;
+        width: 100%;
+    }
+
+    .tech-nav-bar {
+        width: auto;
+        display: block;
+        line-height: 80px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .tech-nav {
+        font-family: "Bellefair", sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 25%);
+        border-radius: 50%;
+        width: 60px;
+        line-height: 60px;
+        margin: 20px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+
+    }
+
+    .tech-nav:hover {
+        border-color: rgba(255, 255, 255, 100%)
+    }
+
+    .current-tech {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .text-container {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 0;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .tech-term {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .tech-name {
+        font-family: "Bellefair", sans-serif;
+        font-size: 40px;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .tech-text {
+        width: 450px;
+    }
 }
 
-.logo {
-    margin: auto 60px;
-}
+@media screen and (max-width: 650px) {
+    /*---------- All Pages ----------*/
+    body {
+        margin: 0;
+        background-color: #0B0D17;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff;
 
-.header-hr {
-    border: 0;
-    border-top: 1px solid #ffffff;
-    flex-grow: 1;
-    opacity: 25%;
-    margin: auto 0 auto auto;
-}
+    }
 
-.header-nav-row {
-    padding: 40px 15% 40px 0;
-    background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40px);
-    display: inline-block;
-}
+    header {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.header-nav-hr {
-    margin: auto 90px auto 0;
-    border: 0;
-    border-top: 1px solid #ffffff;
-    opacity: 25%;
-    width: 30px;
-    height: 5px;
-    display: inline-block;
-}
+    .logo {
+        margin: auto 60px;
+    }
 
-.header-nav-button {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    color: white;
-    text-decoration: none;
-    margin: 30px;
-    padding: 37px 0;
-    text-transform: uppercase;
+    .header-hr {
+        border: 0;
+        border-top: 1px solid #ffffff;
+        flex-grow: 1;
+        opacity: 25%;
+        margin: auto 0 auto auto;
+    }
 
-}
-.header-nav-button:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, .5);
-}
+    .header-nav-row {
+        padding: 40px 15% 40px 0;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40px);
+        display: inline-block;
+    }
 
-.current-page {
-    border-bottom: 3px solid white;
-}
-.nav-num {
-    font-weight: bold;
-}
+    .header-nav-hr {
+        margin: auto 90px auto 0;
+        border: 0;
+        border-top: 1px solid #ffffff;
+        opacity: 25%;
+        width: 30px;
+        height: 5px;
+        display: inline-block;
+    }
 
-/*---------- Home Page ----------*/
+    .header-nav-button {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: white;
+        text-decoration: none;
+        margin: 30px;
+        padding: 37px 0;
+        text-transform: uppercase;
 
-.body-home {
-    background-image: url("../assets/home/background-home-desktop.jpg");
-}
+    }
 
-.container-text-home {
-    position: absolute;
-    bottom: 15%;
-    left: 15%;
-    padding: 0;
-}
+    .header-nav-button:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, .5);
+    }
 
-.prompt-home {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 28px;
-    letter-spacing: 4.75px;
-    color: #D0D6F9;
-    text-transform: uppercase;
-}
-.title-home {
-    font-family: "Bellefair", sans-serif;
-    font-size: 150px;
-    margin: 20px 0;
-    line-height: 172px
-}
-.body-text {
-    font-family: "Barlow", sans-serif;
-    font-size: 18px;
-    line-height: 32px;
-    color: #D0D6F9;
-}
+    .current-page {
+        border-bottom: 3px solid white;
+    }
 
-.explore-container {
-    display: inline-flex;
-    position: absolute;
-    bottom: 15%;
-    right: 15%;
-}
+    .nav-num {
+        font-weight: bold;
+    }
 
-.explore-btn {
-    font-family: "Bellefair", sans-serif;
-    font-size: 32px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #ffffff;
-    color: #000000;
-    background-clip: padding-box;
-    border-radius: 50%;
-    width: 274px;
-    line-height: 274px;
-    text-align: center;
-    border: 88px solid rgba(255, 255, 255, 0);
-}
+    /*---------- Home Page ----------*/
+    .body-home {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
 
-.explore-btn:hover {
-    border-color: rgba(255, 255, 255, 0.1);
-}
+    .container-text-home {
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+        padding: 0;
+    }
 
-/*---------- All pages, except home ----------*/
+    .prompt-home {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
 
-.page-prompt {
-    margin: 60px 165px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
-    color: #ffffff;
-}
+    .title-home {
+        font-family: "Bellefair", sans-serif;
+        font-size: 150px;
+        margin: 20px 0;
+        line-height: 172px
+    }
 
-.page-prompt-num {
-    font-weight: bold;
-    opacity: 25%
-}
+    .body-text {
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #D0D6F9;
+    }
 
-/*---------- Destination Page ----------*/
+    .explore-container {
+        display: inline-flex;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+    }
 
-.body-destination {
-    background-image: url("../assets/destination/background-destination-desktop.jpg");
-}
+    .explore-btn {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #000000;
+        background-clip: padding-box;
+        border-radius: 50%;
+        width: 274px;
+        line-height: 274px;
+        text-align: center;
+        border: 88px solid rgba(255, 255, 255, 0);
+    }
 
-.dest-image {
-    display: inline-flex;
-    position: absolute;
-    bottom: 15%;
-    left: 15%;
-}
+    .explore-btn:hover {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
 
-.container-text-dest {
-    position: absolute;
-    bottom: 15%;
-    right: 15%;
-    padding: 0;
-}
+    /*---------- All pages, except home ----------*/
+    .page-prompt {
+        margin: 60px 165px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        color: #ffffff;
+    }
 
-.container-text-dest {
-    width: 450px;
-}
+    .page-prompt-num {
+        font-weight: bold;
+        opacity: 25%
+    }
 
-.dest-nav {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    color: #D0D6F9;
-    text-decoration: none;
-    margin: 15px;
-    padding: 10px 0;
-    text-transform: uppercase;
+    /*---------- Destination Page ----------*/
+    .body-destination {
+        background-image: url("../assets/destination/background-destination-desktop.jpg");
+    }
 
-}
-.dest-nav:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, .5)
-}
+    .dest-image {
+        display: inline-flex;
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+    }
 
-.current-dest {
-    color: #ffffff;
-    border-bottom: 3px solid white;
-}
+    .container-text-dest {
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+        padding: 0;
+    }
 
-.title-dest {
-    font-family: "Bellefair", sans-serif;
-    font-size: 100px;
-    margin: 40px 0 20px 0;
-    line-height: 115px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+    .container-text-dest {
+        width: 450px;
+    }
 
-.stats-hr {
-    border: 0;
-    border-top: 1px solid #D0D6F9;
-    opacity: 20%;
-}
+    .dest-nav {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-decoration: none;
+        margin: 15px;
+        padding: 10px 0;
+        text-transform: uppercase;
 
-.stats {
-    display: inline-block;
-    width: 220px;
-}
+    }
 
-.stat-text {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 2.36px;
-    color: #D0D6F9;
-    text-transform: uppercase;
-}
+    .dest-nav:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, .5)
+    }
 
-.stat-value {
-    font-family: "Bellefair", sans-serif;
-    font-size: 28px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+    .current-dest {
+        color: #ffffff;
+        border-bottom: 3px solid white;
+    }
 
-/*---------- Crew Page ----------*/
+    .title-dest {
+        font-family: "Bellefair", sans-serif;
+        font-size: 100px;
+        margin: 40px 0 20px 0;
+        line-height: 115px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 
-.body-crew {
-    background-image: url("../assets/crew/background-crew-desktop.jpg");
-}
+    .stats-hr {
+        border: 0;
+        border-top: 1px solid #D0D6F9;
+        opacity: 20%;
+    }
 
-.container-text-crew {
-    position: absolute;
-    bottom: 10%;
-    left: 15%;
-    padding: 0;
-}
+    .stats {
+        display: inline-block;
+        width: 220px;
+    }
 
-.crew-image {
-    display: inline-flex;
-    position: absolute;
-    bottom: 0;
-    right: 15%;
-}
+    .stat-text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.36px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
 
-.crew-role {
-    font-family: "Bellefair", sans-serif;
-    font-size: 32px;
-    margin: 100px 0 10px 0;
-    line-height: 37px;
-    text-transform: uppercase;
-    opacity: 50%;
-    color: #ffffff;
-}
+    .stat-value {
+        font-family: "Bellefair", sans-serif;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 
-.crew-name {
-    font-family: "Bellefair", sans-serif;
-    font-size: 56px;
-    margin: 0 0 20px 0;
-    line-height: 64px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+    /*---------- Crew Page ----------*/
+    .body-crew {
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+    }
 
-.crew-text {
-    width: 450px;
-}
+    .container-text-crew {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+        padding: 0;
+    }
 
-.crew-nav-bar {
-    margin-top: 100px;
-}
+    .crew-image-container {
+        display: inline-flex;
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+    }
 
-.crew-nav {
-    display: inline-block;
-    border: 7.5px solid rgba(255, 255, 255, 17%);
-    border-radius: 50%;
-    margin: 10px;
-}
+    .crew-role {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        margin: 100px 0 10px 0;
+        line-height: 37px;
+        text-transform: uppercase;
+        opacity: 50%;
+        color: #ffffff;
+    }
 
-.crew-nav:hover {
-    border-color: rgba(255, 255, 255, 50%);
-}
+    .crew-name {
+        font-family: "Bellefair", sans-serif;
+        font-size: 56px;
+        margin: 0 0 20px 0;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 
-.current-crew {
-    border-color: #ffffff;
-}
+    .crew-text {
+        width: 450px;
+    }
 
-/*---------- Tech Page ----------*/
+    .crew-nav-bar {
+        margin-top: 100px;
+    }
 
-.body-tech {
-    background-image: url("../assets/technology/background-technology-desktop.jpg");
-}
+    .crew-nav {
+        display: inline-block;
+        border: 7.5px solid rgba(255, 255, 255, 17%);
+        border-radius: 50%;
+        margin: 10px;
+    }
 
-.container-tech {
-    margin: 100px 165px auto 165px;
-    display: flex;
-    justify-content: space-between;
-}
+    .crew-nav:hover {
+        border-color: rgba(255, 255, 255, 50%);
+    }
 
-.container-text-nav-tech {
-    position: absolute;
-    bottom: 25%;
-    left: 10%;
-    padding: 0;
-}
+    .current-crew {
+        border-color: #ffffff;
+    }
 
-.tech-image {
-    display: inline-flex;
-    position: absolute;
-    bottom: 15%;
-    right: 15%;
-}
+    /*---------- Tech Page ----------*/
+    .body-tech {
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+    }
 
-.tech-nav-bar {
-    width: 180px;
-    height: 350px;
-    display: inline-block;
-    line-height: 80px;
-    overflow: hidden;
-}
+    .container-tech {
+        margin: 100px 165px auto 165px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.tech-nav {
-    font-family: "Bellefair", sans-serif;
-    font-size: 32px;
-    line-height: 80px;
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 25%);
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    text-align: center;
+    .container-text-nav-tech {
+        position: absolute;
+        bottom: 25%;
+        left: 10%;
+        padding: 0;
+    }
 
-}
+    .tech-image {
+        display: inline-flex;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+    }
 
-.tech-nav:hover {
-    border-color: rgba(255, 255, 255, 100%)
-}
+    .tech-nav-bar {
+        width: 180px;
+        height: 350px;
+        display: inline-block;
+        line-height: 80px;
+        overflow: hidden;
+    }
 
-.current-tech {
-    background-color: #ffffff;
-    color: #000000;
-}
+    .tech-nav {
+        font-family: "Bellefair", sans-serif;
+        font-size: 32px;
+        line-height: 80px;
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 25%);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        text-align: center;
 
-.text-container {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 0;
-    height: 320px;
-    overflow: hidden;
-}
+    }
 
-.tech-term {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 16px;
-    margin: 0 0 10px 0;
-    line-height: 37px;
-    text-transform: uppercase;
-    letter-spacing: 2.7px;
-    color: #D0D6F9;
-}
+    .tech-nav:hover {
+        border-color: rgba(255, 255, 255, 100%)
+    }
 
-.tech-name {
-    font-family: "Bellefair", sans-serif;
-    font-size: 56px;
-    margin: 0 0 20px 0;
-    line-height: 64px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+    .current-tech {
+        background-color: #ffffff;
+        color: #000000;
+    }
 
-.body-text{
-    width: 450px;
+    .text-container {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 0;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .tech-term {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        line-height: 37px;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .tech-name {
+        font-family: "Bellefair", sans-serif;
+        font-size: 56px;
+        margin: 0 0 20px 0;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .body-text {
+        width: 450px;
+    }
 }
