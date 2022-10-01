@@ -11,52 +11,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Space tourism website</title>
 </head>
+<body class="body-crew">
 <header>
-    <nav class="main-nav">
-        <img class="logo" src="./assets/shared/logo.svg" alt="logo">
-        <hr class="nav-hr">
-        <div class="nav-bar">
-            <hr class="nav-bar-hr">
-            <a class="main-nav-button" href="./index.html"><span class="nav-num">00</span> Home</a>
-            <a class="main-nav-button" href="./destination-moon.html"><span class="nav-num">01</span> Destination</a>
-            <a class="main-nav-button current-page" href="./crew-commander.html"><span class="nav-num">02</span> Crew</a>
-            <a class="main-nav-button" href="./technology-vehicle.html"><span class="nav-num">03</span> Technology</a>
-        </div>
+    <img class="logo" src="./assets/shared/logo.svg" alt="Logo">
+    <hr class="header-hr">
+    <nav class="header-nav-row">
+        <hr class="header-nav-hr">
+        <a class="header-nav-button" href="./index.html"><span class="nav-num">00</span> Home</a>
+        <a class="header-nav-button" href="./destination-moon.html"><span class="nav-num">01</span> Destination</a>
+        <a class="header-nav-button current-page" href="./crew-commander.html"><span class="nav-num">02</span> Crew</a>
+        <a class="header-nav-button" href="./technology-vehicle.html"><span class="nav-num">03</span> Technology</a>
     </nav>
 </header>
-<body class="body-crew">
 <p class="page-prompt">
     <span class="page-prompt-num">02</span> Meet your crew
 </p>
-<div class="content-crew">
-    <div>
-        <p class="crew-role">
-            Pilot
+<div class="container-text-crew">
+    <p class="crew-role">
+        Pilot
+    </p>
+    <p class="crew-name">
+        Victor Glover
+    </p>
+    <div class="crew-text">
+        <p class="body-text">
+            Pilot on the first operational flight of the SpaceX Crew Dragon to the
+            International Space Station. Glover is a commander in the U.S. Navy where
+            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+            station systems flight engineer.
         </p>
-        <p class="crew-name">
-            Victor Glover
-        </p>
-        <div class="crew-text">
-            <p class="body-text">
-                Pilot on the first operational flight of the SpaceX Crew Dragon to the
-                International Space Station. Glover is a commander in the U.S. Navy where
-                he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
-                station systems flight engineer.
-            </p>
-            <nav class="crew-nav-bar">
-                <a class="crew-nav" href="./crew-commander.html"></a>
-                <a class="crew-nav" href="./crew-specialist.html"></a>
-                <a class="crew-nav current-crew" href="./crew-pilot.html"></a>
-                <a class="crew-nav" href="./crew-engineer.html"></a>
-            </nav>
-        </div>
+        <nav class="crew-nav-bar">
+            <a class="crew-nav" href="./crew-commander.html"></a>
+            <a class="crew-nav" href="./crew-specialist.html"></a>
+            <a class="crew-nav current-crew" href="./crew-pilot.html"></a>
+            <a class="crew-nav" href="./crew-engineer.html"></a>
+        </nav>
     </div>
-    <picture class="crew-image">
-        <source srcset="./assets/crew/image-victor-glover.webp" type="image/webp">
-        <source srcset="./assets/crew/image-victor-glover.png" type="image/png">
-        <img src="./assets/crew/image-victor-glover.png" alt="Victor Glover">
-    </picture>
-
 </div>
+<picture class="crew-image">
+    <source srcset="./assets/crew/image-victor-glover.webp" type="image/webp">
+    <source srcset="./assets/crew/image-victor-glover.png" type="image/png">
+    <img src="./assets/crew/image-victor-glover.png" alt="Victor Glover">
+</picture>
 </body>
 </html>

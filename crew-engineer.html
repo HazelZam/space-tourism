@@ -11,51 +11,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Space tourism website</title>
 </head>
+<body class="body-crew">
 <header>
-    <nav class="main-nav">
-        <img class="logo" src="./assets/shared/logo.svg" alt="logo">
-        <hr class="nav-hr">
-        <div class="nav-bar">
-            <hr class="nav-bar-hr">
-            <a class="main-nav-button" href="./index.html"><span class="nav-num">00</span> Home</a>
-            <a class="main-nav-button" href="./destination-moon.html"><span class="nav-num">01</span> Destination</a>
-            <a class="main-nav-button current-page" href="./crew-commander.html"><span class="nav-num">02</span> Crew</a>
-            <a class="main-nav-button" href="./technology-vehicle.html"><span class="nav-num">03</span> Technology</a>
-        </div>
+    <img class="logo" src="./assets/shared/logo.svg" alt="Logo">
+    <hr class="header-hr">
+    <nav class="header-nav-row">
+        <hr class="header-nav-hr">
+        <a class="header-nav-button" href="./index.html"><span class="nav-num">00</span> Home</a>
+        <a class="header-nav-button" href="./destination-moon.html"><span class="nav-num">01</span> Destination</a>
+        <a class="header-nav-button current-page" href="./crew-commander.html"><span class="nav-num">02</span> Crew</a>
+        <a class="header-nav-button" href="./technology-vehicle.html"><span class="nav-num">03</span> Technology</a>
     </nav>
 </header>
-<body class="body-crew">
 <p class="page-prompt">
     <span class="page-prompt-num">02</span> Meet your crew
 </p>
-<div class="content-crew">
-    <div>
-        <p class="crew-role">
-            Flight Engineer
+<div class="container-text-crew">
+    <p class="crew-role">
+        Flight Engineer
+    </p>
+    <p class="crew-name">
+        Anousheh Ansari
+    </p>
+    <div class="crew-text">
+        <p class="body-text">
+            Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+            Ansari was the fourth self-funded space tourist, the first self-funded woman to
+            fly to the ISS, and the first Iranian in space.
         </p>
-        <p class="crew-name">
-            Anousheh Ansari
-        </p>
-        <div class="crew-text">
-            <p class="body-text">
-                Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
-                Ansari was the fourth self-funded space tourist, the first self-funded woman to
-                fly to the ISS, and the first Iranian in space.
-            </p>
-            <nav class="crew-nav-bar">
-                <a class="crew-nav" href="./crew-commander.html"></a>
-                <a class="crew-nav" href="./crew-specialist.html"></a>
-                <a class="crew-nav" href="./crew-pilot.html"></a>
-                <a class="crew-nav current-crew" href="./crew-engineer.html"></a>
-            </nav>
-        </div>
+        <nav class="crew-nav-bar">
+            <a class="crew-nav" href="./crew-commander.html"></a>
+            <a class="crew-nav" href="./crew-specialist.html"></a>
+            <a class="crew-nav" href="./crew-pilot.html"></a>
+            <a class="crew-nav current-crew" href="./crew-engineer.html"></a>
+        </nav>
     </div>
-    <picture class="crew-image">
-        <source srcset="./assets/crew/image-anousheh-ansari.webp" type="image/webp">
-        <source srcset="./assets/crew/image-anousheh-ansari.png" type="image/png">
-        <img src="./assets/crew/image-anousheh-ansari.png" alt="Anousheh Ansari">
-    </picture>
-
 </div>
+<picture class="crew-image">
+    <source srcset="./assets/crew/image-anousheh-ansari.webp" type="image/webp">
+    <source srcset="./assets/crew/image-anousheh-ansari.png" type="image/png">
+    <img src="./assets/crew/image-anousheh-ansari.png" alt="Anousheh Ansari">
+</picture>
 </body>
 </html>

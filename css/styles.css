@@ -1,28 +1,15 @@
+/*---------- All Pages ----------*/
+
 body {
     margin: 0;
     background-color: #0B0D17;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: #ffffff;
 
 }
 
-.body-home {
-    background-image: url("../assets/home/background-home-desktop.jpg");
-}
-.body-destination {
-    background-image: url("../assets/destination/background-destination-desktop.jpg");
-}
-
-.body-crew {
-    background-image: url("../assets/crew/background-crew-desktop.jpg");
-}
-
-.body-tech {
-    background-image: url("../assets/technology/background-technology-desktop.jpg");
-}
-
-.main-nav {
+header {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -32,7 +19,7 @@ body {
     margin: auto 60px;
 }
 
-.nav-hr {
+.header-hr {
     border: 0;
     border-top: 1px solid #ffffff;
     flex-grow: 1;
@@ -40,14 +27,14 @@ body {
     margin: auto 0 auto auto;
 }
 
-.nav-bar {
-    padding: 40px 165px 40px 0;
+.header-nav-row {
+    padding: 40px 15% 40px 0;
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40px);
     display: inline-block;
 }
 
-.nav-bar-hr {
+.header-nav-hr {
     margin: auto 90px auto 0;
     border: 0;
     border-top: 1px solid #ffffff;
@@ -57,7 +44,7 @@ body {
     display: inline-block;
 }
 
-.main-nav-button {
+.header-nav-button {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 16px;
     letter-spacing: 2.7px;
@@ -68,7 +55,7 @@ body {
     text-transform: uppercase;
 
 }
-.main-nav-button:hover {
+.header-nav-button:hover {
     border-bottom: 3px solid rgba(255, 255, 255, .5);
 }
 
@@ -79,16 +66,17 @@ body {
     font-weight: bold;
 }
 
-.content-home {
-    margin: 300px 165px auto 165px;
-    display: flex;
-    justify-content: space-between;
+/*---------- Home Page ----------*/
+
+.body-home {
+    background-image: url("../assets/home/background-home-desktop.jpg");
 }
 
-.content-other {
-    margin: 100px 165px auto 165px;
-    display: flex;
-    justify-content: space-between;
+.container-text-home {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    padding: 0;
 }
 
 .prompt-home {
@@ -111,35 +99,37 @@ body {
     color: #D0D6F9;
 }
 
-.explore-btn-box {
-    width: 450px;
-    height: 450px;
-    text-align: center;
-    line-height: 225px;
-    border-radius: 50%;
+.explore-container {
+    display: inline-flex;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
 }
+
 .explore-btn {
     font-family: "Bellefair", sans-serif;
     font-size: 32px;
     letter-spacing: 2px;
-    display: inline-block;
-    background-color: white;
-    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    background-clip: padding-box;
     border-radius: 50%;
     width: 274px;
-    height: 274px;
     line-height: 274px;
     text-align: center;
-    text-decoration: none;
-    margin: 88px;
+    border: 88px solid rgba(255, 255, 255, 0);
 }
 
-.explore-btn-box:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.explore-btn:hover {
+    border-color: rgba(255, 255, 255, 0.1);
 }
+
+/*---------- All pages, except home ----------*/
 
 .page-prompt {
-    margin: 50px 165px;
+    margin: 60px 165px;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 28px;
     line-height: 34px;
@@ -152,7 +142,27 @@ body {
     opacity: 25%
 }
 
-.content-dest {
+/*---------- Destination Page ----------*/
+
+.body-destination {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+.dest-image {
+    display: inline-flex;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+
+.container-text-dest {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    padding: 0;
+}
+
+.container-text-dest {
     width: 450px;
 }
 
@@ -213,10 +223,24 @@ body {
     color: #ffffff;
 }
 
-.content-crew {
-    margin: 50px 165px auto 165px;
-    display: flex;
-    justify-content: space-between;
+/*---------- Crew Page ----------*/
+
+.body-crew {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.container-text-crew {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    padding: 0;
+}
+
+.crew-image {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
 }
 
 .crew-role {
@@ -256,12 +280,35 @@ body {
 .crew-nav:hover {
     border-color: rgba(255, 255, 255, 50%);
 }
+
 .current-crew {
-    border-color: white;
+    border-color: #ffffff;
 }
 
-.content-tech {
-    margin: 50px 0;
+/*---------- Tech Page ----------*/
+
+.body-tech {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
+.container-tech {
+    margin: 100px 165px auto 165px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-text-nav-tech {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    padding: 0;
+}
+
+.tech-image {
+    display: inline-flex;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
 }
 
 .tech-nav-bar {
