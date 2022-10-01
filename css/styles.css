@@ -27,7 +27,7 @@
     }
 
     .header-nav-row {
-        padding: 40px 15% 40px 0;
+        padding: 40px 12% 40px 0;
         background-color: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40px);
         display: inline-block;
@@ -78,7 +78,7 @@
         letter-spacing: 2.7px;
         color: #ffffff;
         text-decoration: none;
-        margin: 30px;
+        margin: 20px;
         padding: 37px 0;
         text-transform: uppercase;
 
@@ -110,8 +110,8 @@
 
     .container-text-home {
         position: absolute;
-        bottom: 15%;
-        left: 15%;
+        bottom: 12%;
+        left: 12%;
         padding: 0;
     }
 
@@ -137,8 +137,8 @@
     .explore-container {
         display: inline-flex;
         position: absolute;
-        bottom: 15%;
-        right: 15%;
+        bottom: 5%;
+        right: 5%;
     }
 
     .explore-btn {
@@ -186,17 +186,14 @@
     .dest-image {
         display: inline-flex;
         position: absolute;
-        bottom: 15%;
-        left: 15%;
+        bottom: 12%;
+        left: 16%;
     }
 
     .container-text-dest {
         position: absolute;
-        bottom: 15%;
-        right: 15%;
-    }
-
-    .container-text-dest {
+        bottom: 12%;
+        right: 12%;
         width: 450px;
     }
 
@@ -234,6 +231,7 @@
         border: 0;
         border-top: 1px solid #D0D6F9;
         opacity: 20%;
+        margin: 50px 0 20px 0;
     }
 
     .stats {
@@ -244,10 +242,11 @@
     .stat-text {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 14px;
-        line-height: 0;
+        line-height: 14px;
         letter-spacing: 2.36px;
         color: #D0D6F9;
         text-transform: uppercase;
+
     }
 
     .stat-value {
@@ -256,6 +255,7 @@
         line-height: 32px;
         text-transform: uppercase;
         color: #ffffff;
+        margin: 0;
     }
 
     /*---------- Crew Page ----------*/
@@ -277,14 +277,14 @@
     .container-text-nav-crew {
         position: absolute;
         bottom: 10%;
-        left: 15%;
+        left: 12%;
     }
 
     .crew-image {
         display: inline-flex;
         position: absolute;
         bottom: 0;
-        right: 15%;
+        right: 10%;
     }
 
     .crew-role {
@@ -306,7 +306,7 @@
         color: #ffffff;
     }
 
-    .container-text-crew {
+    .crew-text {
         width: 450px;
     }
 
@@ -385,7 +385,7 @@
         color: #000000;
     }
 
-    .text-container {
+    .container-text-tech {
         display: inline-block;
         margin: 0;
         padding: 0;
@@ -420,7 +420,7 @@
     .container-text-nav-tech {
         position: absolute;
         bottom: 25%;
-        left: 5%;
+        left: 10%;
     }
 
     .tech-image {
@@ -442,7 +442,7 @@
     }
 
     .header-nav-row {
-        padding: 40px 30px;
+        padding: 38px 40px;
     }
 
     .header-nav-hr {
@@ -450,7 +450,10 @@
     }
 
     .header-nav-button {
-        margin: 20px;
+        margin: 15px;
+        padding-bottom: 35px;
+        font-size: 14px;
+        letter-spacing: 2.3625px;
     }
 
     .header-nav-button:hover {
@@ -509,7 +512,7 @@
 
     /*---------- All pages, except home ----------*/
     .page-prompt {
-        margin: 60px 40px;
+        margin: 40px 40px 60px 40px;
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 3.375px;
@@ -553,16 +556,7 @@
         position: static;
         margin: 5% auto 0 auto;
         text-align: center;
-        width: 100%;
-    }
-
-    .crew-image {
-        display: inline-block;
-        right: 0;
-        left: 0;
-        align-items: center;
-        margin: auto;
-        height: 450px;
+        height: 232px;
     }
 
     .crew-role {
@@ -573,13 +567,15 @@
 
     .crew-name {
         font-size: 40px;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
         line-height: 46px;
     }
 
-    .container-text-crew {
-        width: 460px;
-        margin: auto;
+    .crew-text {
+        margin: 0 auto;
+        word-wrap: break-word;
+        overflow: unset;
+        width: 590px;
     }
 
     .crew-nav-bar {
@@ -592,6 +588,15 @@
 
     .current-crew {
         border-color: #ffffff;
+    }
+
+    .crew-image {
+        display: inline-block;
+        right: 0;
+        left: 0;
+        align-items: center;
+        margin: auto;
+        height: 532px;
     }
 
     /*---------- Tech Page ----------*/
@@ -617,7 +622,7 @@
         height: auto;
         display: block;
         line-height: 80px;
-        margin: auto;
+        margin: 20px;
     }
 
     .tech-nav {
@@ -626,7 +631,12 @@
         line-height: 60px;
         display: inline-flex;
         justify-content: center;
+        margin: 10px;
 
+    }
+
+    .container-text-tech {
+        margin: 20px;
     }
 
     .tech-name {
@@ -635,7 +645,7 @@
     }
 
     .tech-text {
-        width: 450px;
+        width: 440px;
     }
 }
 @media screen and (max-width: 650px){
