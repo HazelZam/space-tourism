@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" >
-  <link rel="stylesheet" href="./css/styles.css" >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" >
+    <link rel="stylesheet" href="styles/styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="body-destination">
 <header>
-    <img class="logo" src="./assets/shared/logo.svg" alt="Logo">
+    <img class="logo" src="images/shared/logo.svg" alt="Logo">
     <hr class="header-hr">
     <nav class="header-nav-row">
         <hr class="header-nav-hr">
@@ -22,50 +22,63 @@
         <a class="header-nav-button" href="./crew-commander.html"><span class="nav-num">02</span> Crew</a>
         <a class="header-nav-button" href="./technology-vehicle.html"><span class="nav-num">03</span> Technology</a>
     </nav>
+    <nav class="menu">
+        <a class="header-nav-button" href="./index.html"><span class="nav-num">00</span> Home</a>
+        <a class="header-nav-button current-page" href="./destination-moon.html"><span class="nav-num">01</span> Destination</a>
+        <a class="header-nav-button" href="./crew-commander.html"><span class="nav-num">02</span> Crew</a>
+        <a class="header-nav-button" href="./technology-vehicle.html"><span class="nav-num">03</span> Technology</a>
+    </nav>
+    <a href="javascript:void(0);" class="icon-menu" onclick="openMenu()">
+        <img src="images/shared/icon-hamburger.svg" alt="Menu">
+    </a>
+    <a href="javascript:void(0);" class="icon-close" onclick="closeMenu()">
+        <img src="images/shared/icon-close.svg" alt="Close">
+    </a>
 </header>
 <p class="page-prompt">
-  <span class="page-prompt-num">01</span> Pick your destination
+    <span class="page-prompt-num">01</span> Pick your destination
 </p>
 <picture  class="dest-image" >
-  <source srcset="./assets/destination/image-europa.webp" type="image/webp">
-  <source srcset="./assets/destination/image-europa.png" type="image/png">
-  <img class="dest-image" src="./assets/destination/image-europa.png" alt="Europa">
+    <source srcset="images/destination/image-europa.webp" type="image/webp">
+    <source srcset="images/destination/image-europa.png" type="image/png">
+    <img class="dest-image" src="images/destination/image-europa.png" alt="Europa">
 </picture>
 <div class="container-text-dest">
-  <nav class="dest-nav-bar">
-    <a class="dest-nav" href="./destination-moon.html">Moon</a>
-    <a class="dest-nav" href="./destination-mars.html">Mars</a>
-    <a class="dest-nav current-dest" href="./destination-europa.html">Europa</a>
-    <a class="dest-nav" href="./destination-titan.html">Titan</a>
-  </nav>
-  <p class="title-dest">
-    Europa
-  </p>
-  <p class="body-text">
-    The smallest of the four Galilean moons orbiting Jupiter, Europa is a
-    winter lover’s dream. With an icy surface, it’s perfect for a bit of
-    ice skating, curling, hockey, or simple relaxation in your snug
-    wintery cabin.
-  </p>
-  <hr class="stats-hr">
-  <div>
-    <div class="stats">
-      <p class="stat-text">
-        Avg. distance
-      </p>
-      <p class="stat-value">
-        628 mil. km
-      </p>
+    <nav class="dest-nav-bar">
+        <a class="dest-nav" href="./destination-moon.html">Moon</a>
+        <a class="dest-nav" href="./destination-mars.html">Mars</a>
+        <a class="dest-nav current-dest" href="./destination-europa.html">Europa</a>
+        <a class="dest-nav" href="./destination-titan.html">Titan</a>
+    </nav>
+    <p class="title-dest">
+        Europa
+    </p>
+    <p class="body-text">
+        The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+        winter lover’s dream. With an icy surface, it’s perfect for a bit of
+        ice skating, curling, hockey, or simple relaxation in your snug
+        wintery cabin.
+    </p>
+    <hr class="stats-hr">
+    <div>
+        <div class="stats">
+            <p class="stat-text">
+                Avg. distance
+            </p>
+            <p class="stat-value">
+                628 mil. km
+            </p>
+        </div>
+        <div class="stats">
+            <p class="stat-text">
+                Est. travel time
+            </p>
+            <p class="stat-value">
+                3 years
+            </p>
+        </div>
     </div>
-    <div class="stats">
-      <p class="stat-text">
-        Est. travel time
-      </p>
-      <p class="stat-value">
-        3 years
-      </p>
-    </div>
-  </div>
 </div>
+<script src="scripts/script.js"></script>
 </body>
 </html>
